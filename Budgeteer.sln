@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgeteer_Angular", "Budgeteer_Angular\Budgeteer_Angular.csproj", "{C6A0D1D4-CFA2-4300-B44C-5F8786729BDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6A0D1D4-CFA2-4300-B44C-5F8786729BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A0D1D4-CFA2-4300-B44C-5F8786729BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A0D1D4-CFA2-4300-B44C-5F8786729BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A0D1D4-CFA2-4300-B44C-5F8786729BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DAB4443-3A11-487C-B6F7-C9F3102F0864}
+	EndGlobalSection
+EndGlobal
