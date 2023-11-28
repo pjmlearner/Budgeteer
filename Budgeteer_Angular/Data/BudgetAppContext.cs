@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Budgeteer_Angular.Data
 {
-    public partial class AppContext : DbContext
+    public partial class BudgetAppContext : DbContext
     {
-        public AppContext()
+        public BudgetAppContext()
         {
         }
 
-        public AppContext(DbContextOptions<AppContext> options)
+        public BudgetAppContext(DbContextOptions<BudgetAppContext> options)
             : base(options)
         {
         }
@@ -122,7 +122,7 @@ namespace Budgeteer_Angular.Data
                 entity.ToTable("users", "development");
 
                 entity.Property(e => e.UserId)
-                    .ValueGeneratedNever()
+                    .ValueGeneratedOnAdd()
                     .HasColumnName("user_id");
 
                 entity.Property(e => e.EmailAddress)

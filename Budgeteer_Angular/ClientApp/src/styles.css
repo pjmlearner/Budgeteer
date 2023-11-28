@@ -14,3 +14,19 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+.cdk-overlay-container {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  /*background-color: indianred;*/
+  border-radius: 8px;
+  padding: 8px 16px 16px;
+}
+
+.hello {
+  background-color: rgba(255,255,255,.3);
+  backdrop-filter: blur(10px);
+  transition: none;
+}

@@ -8,7 +8,7 @@ namespace Budgeteer_Angular.Models
         public int IncomeId { get; set; }
         public string Source { get; set; }
         public float? Amount { get; set; }
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
         public int? FrequencyId { get; set; }
 
         public virtual Frequency Frequency { get; set; }
