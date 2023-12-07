@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Budgeteer_Angular.Data
 {
-    public partial class AppContext : DbContext
+    public partial class BudgetAppContext : DbContext
     {
-        public AppContext()
+        public BudgetAppContext()
         {
         }
 
-        public AppContext(DbContextOptions<AppContext> options)
+        public BudgetAppContext(DbContextOptions<BudgetAppContext> options)
             : base(options)
         {
         }
@@ -27,7 +27,7 @@ namespace Budgeteer_Angular.Data
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseNpgsql("Host=localhost;Database=budget_app;Username=postgres;Password=super1731");
+                optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=budget_app;Username=postgres;Password=super1731;SearchPath=development;");
             }
         }
 
@@ -122,7 +122,7 @@ namespace Budgeteer_Angular.Data
                 entity.ToTable("users", "development");
 
                 entity.Property(e => e.UserId)
-                    .ValueGeneratedNever()
+                    .ValueGeneratedOnAdd()
                     .HasColumnName("user_id");
 
                 entity.Property(e => e.EmailAddress)
